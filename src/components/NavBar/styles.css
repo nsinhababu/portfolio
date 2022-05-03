@@ -1,0 +1,35 @@
+nav {
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav > a {
+  text-decoration: none;
+  margin: 0 30px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+  border: 1px solid white;
+  padding: 8px 28px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 8px grey;
+}
+
+nav > a:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 16px grey;
+}
+
+nav > a:active {
+  transform: translateY(1px);
+  box-shadow: 0 0 8px grey;
+}
+
+nav > a:first-child {
+  margin: 0 auto 0 35px;
+}

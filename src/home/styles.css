@@ -1,0 +1,31 @@
+.banner {
+  background: url(../../public/assets/bg1.jpeg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+/* .banner > nav > .projects,
+.banner > nav > .blogs,
+.banner > nav > .about-us {
+  position: relative;
+  top: 319px;
+  border: none;
+}
+
+.banner > nav > .projects,
+.banner > nav > .blogs {
+  width: 121px;
+  height: 118px;
+}
+
+.banner > nav > .projects {
+  left: -227px;
+}
+.banner > nav > .blogs {
+  left: -173px;
+}
+.banner > nav > .about-us {
+  left: -102px;
+  width: 79px;
+  height: 163px;
+} */
