@@ -1,0 +1,11 @@
+@import './home/home';
+@import './components/navbar/navbar';
+@import '../styles/components/logo/logo';
+@import '../styles/components/intro/intro';
+@import '../styles/components/card/card';
+* {
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

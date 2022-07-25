@@ -1,0 +1,17 @@
+.logo-cntnr {
+  display: flex;
+  width: 50px;
+  aspect-ratio: 1 / 1;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 20px;
+    aspect-ratio: 1 / 1;
+  }
+  p {
+    height: 100%;
+    font-size: 1.2rem;
+    color: yellow;
+  }
+}
