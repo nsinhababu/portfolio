@@ -5,7 +5,7 @@
   overflow: hidden;
 
   .primary-cntnr {
-    height: 100%;
+    height: calc(100vh - 70px);
     width: 100vw;
     display: flex;
     justify-content: center;

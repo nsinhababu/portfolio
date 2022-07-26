@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   max-width: 1200px;
+  flex-wrap: wrap;
 
   .i-cntnr-child {
     flex: 1;
@@ -11,8 +12,95 @@
     justify-content: center;
     align-items: center;
 
-    .i-banner {
-      width: 55%;
+    .animation-container {
+      position: relative;
+
+      padding: 0.25rem 0;
+      // background: #ffffff36;
+      background: transparent;
+      width: fit-content;
+      min-height: fit-content;
+      border-radius: 0.3rem;
+      z-index: 0;
+
+      &::after {
+        content: '';
+        opacity: 0;
+
+        display: inline-block;
+        width: 95%;
+        height: 74%;
+        position: absolute;
+        top: 5%;
+        left: 3%;
+        background-color: rgba(255, 255, 255, 0.2117647059);
+        z-index: -1;
+        animation: power-on 1s linear forwards;
+      }
+
+      .i-banner {
+        width: 300px;
+        z-index: 1000;
+      }
+
+      .anmtd-txt {
+        text-align: start;
+        border-right: solid 3px transparent;
+        white-space: nowrap;
+        overflow: hidden;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 1.15rem;
+        color: rgba(255, 255, 255, 0.7);
+        position: absolute;
+        top: 10%;
+        left: 6.5%;
+        z-index: 2000;
+        // padding-right: 0.25rem;
+      }
+      animation: name duration timing-function delay iteration-count direction
+        fill-mode;
+
+      p {
+        animation: animated-text 2.3s steps(23, end) 1s 1 normal both,
+          animated-cursor 100ms steps(23, end) 1s 23,
+          animated-cursor 1s ease-in-out 3.3s infinite;
+      }
     }
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 240px;
+  }
+}
+@keyframes power-on {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.7;
+  }
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor {
+  from {
+    border-right-color: transparent;
+  }
+  to {
+    border-right-color: #f70776;
   }
 }

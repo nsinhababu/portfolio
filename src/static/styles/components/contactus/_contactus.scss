@@ -1,0 +1,25 @@
+.c-cntnr {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.25rem;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 3rem;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.21);
+
+  .mail {
+    font-size: 1.25rem;
+    text-align: start;
+  }
+
+  .social {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+  }
+}

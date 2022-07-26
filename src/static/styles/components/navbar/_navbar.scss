@@ -20,12 +20,14 @@
       line-height: 1.25rem;
       text-decoration: none;
       transition: 0.4s;
+      padding: 0 0.25rem;
     }
 
     .active {
       font-weight: 600;
-      color: #f70776;
+      // color: #f70776;
       position: relative;
+      animation: color-change 0.2s linear 1 forwards;
 
       &::after {
         content: '';
@@ -37,8 +39,28 @@
         bottom: -0.625rem;
         left: 0;
         right: 0;
-        background-color: #f7077791;
+        animation: gradual-grow 0.2s linear 1 forwards;
+        // background-color: #f7077791;
       }
     }
+  }
+}
+
+@keyframes gradual-grow {
+  from {
+    width: 0;
+    background-color: transparent;
+  }
+  to {
+    width: 100%;
+    background-image: linear-gradient(45deg, #f7077791, #f70776);
+  }
+}
+@keyframes color-change {
+  from {
+    color: white;
+  }
+  to {
+    color: #f70776;
   }
 }

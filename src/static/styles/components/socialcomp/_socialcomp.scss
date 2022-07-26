@@ -1,0 +1,21 @@
+.sc-cntnr {
+  width: fit-content;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 0.5px solid #f7077791;
+
+  .link {
+    text-decoration: none;
+
+    .link-img {
+      width: 40px;
+      aspect-ratio: 1 / 1;
+    }
+  }
+}

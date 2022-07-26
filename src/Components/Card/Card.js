@@ -1,12 +1,4 @@
-const Card = ({ src }) => {
-  // const crntDt = new Date();
-  // const startDt = new Date(2021, 9, 20);
-
-  // const totalMonths =
-  //   (crntDt.getFullYear() - startDt.getFullYear()) * 12 -
-  //   startDt.getMonth() +
-  //   crntDt.getMonth();
-
+const Card = ({ src, children }) => {
   return (
     <div className='card-cntnr'>
       <div className='crd-info'>
@@ -27,6 +19,7 @@ const Card = ({ src }) => {
         <span>Axios</span>
         <span>UI/UX</span>
       </div>
+      <div className='experience'>{children}</div>
     </div>
   );
 };
