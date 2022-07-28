@@ -5,6 +5,7 @@ import Projects from './Components/Projects/Projects';
 import Aboutus from './Components/AboutUs/Aboutus';
 import ContactUs from './Components/ContactUs/ContactUs';
 import Address from './Components/Address/Address';
+import Experience from './Components/Experience/Experience';
 
 const AppRoutes = () => {
   return (
@@ -12,6 +13,7 @@ const AppRoutes = () => {
       <Route path='/' element={<Home />}>
         <Route index element={<Intro />} />
         <Route path='/intro' element={<Intro />} />
+        <Route path='/experience' element={<Experience />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/about' element={<Aboutus />} />
         <Route path='/contact' element={<ContactUs />} />

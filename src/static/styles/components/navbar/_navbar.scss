@@ -6,13 +6,14 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  // border-bottom: 0.5px solid lightgray;
   padding: 0 1rem;
 
   .nav-cntnr {
     display: flex;
     gap: 2rem;
     justify-content: space-around;
+    width: 50%;
+    min-width: fit-content;
 
     .nav-link {
       color: white;
@@ -21,11 +22,10 @@
       text-decoration: none;
       transition: 0.4s;
       padding: 0 0.25rem;
+      letter-spacing: 0.5px;
     }
 
     .active {
-      font-weight: 600;
-      // color: #f70776;
       position: relative;
       animation: color-change 0.2s linear 1 forwards;
 
@@ -40,7 +40,6 @@
         left: 0;
         right: 0;
         animation: gradual-grow 0.2s linear 1 forwards;
-        // background-color: #f7077791;
       }
     }
   }
@@ -61,6 +60,8 @@
     color: white;
   }
   to {
+    font-weight: 600;
+
     color: #f70776;
   }
 }

@@ -6,14 +6,26 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 1.25rem;
+  gap: 1.5rem;
   border-radius: 0.5rem;
   color: white;
   padding: 3rem;
-  box-shadow: 0 0 4px rgba(255, 255, 255, 0.21);
+  box-shadow: 0 0 1px #f70776;
+
+  .phone {
+    display: flex;
+    gap: 1rem;
+
+    .call-img {
+      width: 20px;
+      padding: 0.5px;
+      background-color: white;
+      border-radius: 0.25rem;
+    }
+  }
 
   .mail {
-    font-size: 1.25rem;
+    font-size: 1rem;
     text-align: start;
   }
 

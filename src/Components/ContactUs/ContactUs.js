@@ -2,13 +2,14 @@ import SocialComponents from '../SocialComponents/SocialComponents';
 import linkedin from '../../static/img/linkedin.svg';
 import github from '../../static/img/github.svg';
 import codepen from '../../static/img/codepen.svg';
+import call from '../../static/img/call.svg';
 
 const ContactUs = () => {
   return (
     <div className='c-cntnr'>
       <div className='phone'>
-        <img src='' alt='' />
-        <p></p>
+        <img className='call-img' src={call} alt='' />
+        <p>+91-8159004381</p>
       </div>
       <p className='mail'>
         Mail: nilanjan8159@gmail.com / nsinhababu@gmail.com

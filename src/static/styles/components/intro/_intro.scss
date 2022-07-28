@@ -7,7 +7,7 @@
   .i-cntnr-child {
     flex: 1;
     height: calc(100vh - 70px);
-    padding: 1.5rem;
+    padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,6 +66,15 @@
           animated-cursor 1s ease-in-out 3.3s infinite;
       }
     }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .i-cntnr {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
   }
 }
 

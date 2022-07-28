@@ -1,4 +1,4 @@
-const Card = ({ src, children }) => {
+const Card = ({ src }) => {
   return (
     <div className='card-cntnr'>
       <div className='crd-info'>
@@ -17,9 +17,8 @@ const Card = ({ src, children }) => {
         <span>REST API</span>
         <span>JWT</span>
         <span>Axios</span>
-        <span>UI/UX</span>
+        <span>UI / UX</span>
       </div>
-      <div className='experience'>{children}</div>
     </div>
   );
 };

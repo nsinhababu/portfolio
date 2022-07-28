@@ -1,0 +1,17 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 50%;
+  min-width: fit-content;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2rem;
+  box-shadow: 0 0 1px #f70776;
+  border-radius: 0.5rem;
+
+  .tag {
+    color: #f70776;
+    font-size: 1.25rem;
+  }
+}

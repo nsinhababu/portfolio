@@ -4,14 +4,73 @@
   aspect-ratio: 1 / 1;
   justify-content: center;
   align-items: center;
+  gap: 0;
+
+  &:hover {
+    img {
+      animation: glide-reverse 0.5s linear forwards,
+        slide 0.5s linear 0.5s forwards;
+    }
+  }
 
   img {
+    transition: 0.4s;
+
     width: 20px;
     aspect-ratio: 1 / 1;
+    animation: slide-reverse 2s linear forwards, glide 1s linear 2s forwards;
   }
   p {
     height: 100%;
     font-size: 1.2rem;
     color: yellow;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo-cntnr {
+    &:hover {
+      img {
+        animation: none;
+      }
+    }
+    img {
+      animation: none;
+    }
+  }
+}
+
+@keyframes glide {
+  from {
+    margin-bottom: 25px;
+  }
+  to {
+    margin-bottom: 0;
+  }
+}
+@keyframes glide-reverse {
+  from {
+    margin-bottom: 0;
+  }
+  to {
+    margin-bottom: 25px;
+  }
+}
+@keyframes slide {
+  from {
+    width: 20px;
+  }
+  to {
+    width: 0;
+  }
+}
+@keyframes slide-reverse {
+  from {
+    width: 0;
+    margin-bottom: 25px;
+  }
+  to {
+    width: 20px;
+    margin-bottom: 25px;
   }
 }
