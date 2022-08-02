@@ -7,6 +7,7 @@ import call from '../../static/img/call.svg';
 const ContactUs = () => {
   return (
     <div className='c-cntnr'>
+      <h2>Contact</h2>
       <div className='phone'>
         <img className='call-img' src={call} alt='' />
         <p>+91-8159004381</p>

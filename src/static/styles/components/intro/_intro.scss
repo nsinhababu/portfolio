@@ -68,6 +68,13 @@
     }
   }
 }
+.contact-section {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  box-shadow: 0 0 1px #f70776;
+  border-radius: 0.5rem;
+}
 
 @media screen and (max-width: 600px) {
   .i-cntnr {

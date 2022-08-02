@@ -1,4 +1,4 @@
-const Card = ({ src }) => {
+const Card = ({ src, children }) => {
   return (
     <div className='card-cntnr'>
       <div className='crd-info'>

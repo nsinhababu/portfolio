@@ -17,17 +17,22 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 2rem;
+    // height: 110px;
+    min-height: fit-content;
 
     img {
       border-radius: 0.5rem;
+      height: 110px;
     }
   }
   .crd-dtls {
+    margin-top: auto;
     display: flex;
     height: 100%;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
+
     .desig {
       text-align: start;
       font-size: 1.5rem;

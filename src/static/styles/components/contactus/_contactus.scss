@@ -10,7 +10,10 @@
   border-radius: 0.5rem;
   color: white;
   padding: 3rem;
-  box-shadow: 0 0 1px #f70776;
+
+  h2 {
+    color: #f70776;
+  }
 
   .phone {
     display: flex;

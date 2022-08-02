@@ -10,7 +10,7 @@ const Experience = () => {
       />
       <Tiles
         company='Phaico'
-        duration='04/05/2022 - present'
+        duration='04/05/2022 - 22/07/2022'
         tech='React, Redux, REST API, JWT, Axios, UI/UX'
       />
     </div>
